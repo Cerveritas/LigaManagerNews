@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Aqui comienza el head -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Liga Manager</title>
+    <link rel="stylesheet" href="../css/css.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+
+</head>
+<!-- Aqui finaliza el head -->
+<!-- Aqui comienza el body -->
+
+<body>
+    <!-- Aqui comienza el HMTL -->
+
+
+    <header>
+        <div class="left-image">
+            <img src="../imagenes/LogoSinFondo.png" alt="Imagen izquierda">
+        </div>
+        <h1>
+            Liga Manager · <span class="news">News</span>
+        </h1>
+        <div class="right-image">
+            <img src="../imagenes/LogoSinFondo.png" alt="Imagen derecha">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a onclick="redirigirAplicacionDeInterna()">Aplicación</a></li>
+            <li><a onclick="redirigirNoticiasDeInterna()">Noticias</a></li>
+            <li><a href="#" id="contact-link">Contacto</a></li>
+            <li><a style="background-color: #3b3549; color: #FAC014;">Blog</a></li>
+        </ul>
+    </nav>
+    <!-- Hacia abajo el contenido -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Información de Contacto</h2>
+            <p>Para conocer mas informacion para inscribir a tu equipo o unirte a uno:</p>
+            <hr class="hrInfo">
+            <p>🏰 Ayuntamiento: Pl. de las artes, 1, 28942 Fuenlabrada, Madrid</p>
+            <p>📞 +34 644031509</p>
+            <p>📧 ayunt.loranca@gmail.com</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <h1 style="margin-top: 20px;">Blog de Deportistas</h1>
+        <form id="commentForm">
+            <input type="text" id="name" placeholder="Tu nombre" required>
+            <textarea id="comment" placeholder="Escribe tu comentario" required style="height: 200px;"></textarea>
+            <input type="number" id="rating" placeholder="Valoración (1-5)" min="1" max="5" required>
+            <button type="submit">Publicar comentario</button>
+        </form>
+        <div id="comments"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <footer style="margin-top: 5%;">
+
+        <div class="center-container">
+            <ul class="wrapper">
+                <li class="icon facebook">
+                    <span class="tooltip">Facebook</span>
+                    <img style="width: 40px; height: 40px;" src="../imagenes/icoFacebook.png" alt="Icono Instagram">
+                </li>
+                <li class="icon twitter">
+                    <span class="tooltip">Twitter</span>
+                    <img style="width: 40px; height: 40px;" src="../imagenes/icoTwitter.png" alt="Icono Instagram">
+                </li>
+                <li class="icon instagram">
+                    <span class="tooltip">Instagram</span>
+                    <img style="width: 30px; height: 30px;" src="../imagenes/icoInsta.png" alt="Icono Instagram">
+
+                </li>
+            </ul>
+        </div>
+        <div class="right-container">
+
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Aqui finaliza el HTML -->
+    <!-- Aqui comienza en JavaScript-->
+    <script src="../javascript/javaScript.js"></script>
+    <script>
+        empezar();
+
+        // Cargar comentarios almacenados al cargar la página
+        document.addEventListener('DOMContentLoaded', function () {
+            loadComments();
+        });
+
+        
+    </script>
+
+
+    <!-- <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyC1NbuwaoIGFCOhQGdzVfwD9mJX2Jzo5Dc",
+      authDomain: "liga-manager-24ab5.firebaseapp.com",
+      databaseURL: "https://liga-manager-24ab5-default-rtdb.firebaseio.com",
+      projectId: "liga-manager-24ab5",
+      storageBucket: "liga-manager-24ab5.appspot.com",
+      messagingSenderId: "233054845243",
+      appId: "1:233054845243:web:6bb39caf6516e9b3c25f1e",
+      measurementId: "G-6LLKE4EK3E"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+    
+ </script> -->
+
+
+    <!-- Aqui finaliza el JavaScript -->
+</body>
+<!-- Aqui finaliza el body -->
+
+</html>

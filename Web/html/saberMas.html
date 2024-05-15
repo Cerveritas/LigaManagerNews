@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Aqui comienza el head -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Liga Manager</title>
+    <link rel="stylesheet" href="../css/css.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+
+</head>
+<!-- Aqui finaliza el head -->
+<!-- Aqui comienza el body -->
+
+<body>
+    <!-- Aqui comienza el HMTL -->
+
+
+    <header>
+        <div class="left-image">
+            <img src="../imagenes/LogoSinFondo.png" alt="Imagen izquierda">
+        </div>
+        <h1>
+            Liga Manager · <span class="news">News</span>
+        </h1>
+        <div class="right-image">
+            <img src="../imagenes/LogoSinFondo.png" alt="Imagen derecha">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a onclick="redirigirAplicacionDeInterna()">Aplicación</a></li>
+            <li><a onclick="redirigirNoticiasDeInterna()">Noticias</a></li>
+            <li><a href="#" id="contact-link">Contacto</a></li>
+            <li><a style="background-color: #5e488d;" onclick="redirigirEventosDeInterna()">Blog</a></li>
+        </ul>
+    </nav>
+    <!-- Hacia abajo el contenido -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Información de Contacto</h2>
+            <p>Para conocer mas informacion para inscribir a tu equipo o unirte a uno:</p>
+            <hr class="hrInfo">
+            <p>🏰 Ayuntamiento: Pl. de las artes, 1, 28942 Fuenlabrada, Madrid</p>
+            <p>📞 +34 644031509</p>
+            <p>📧 ayunt.loranca@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="nuestroPropositoDIV">
+        <div class="ladoIZQnp">
+            <img src="../imagenes/nuestroProposito.png">
+        </div>
+        <div class="ladoDERnp">
+            <div class="cardPro">
+                <h1><b>¿Que te impide hacer deporte?</b></h1>
+                <hr>
+
+                <h3>
+                    Nuestra principal idea sobre este proyecto fue la idea de fomentar
+                    el deporte de manera que cualquier joven puediera hacerlo de la manera
+                    mas sencilla y rapida posible, y sobre todo GRATIS!!
+                    <br>
+                    Teniendo diversos deportes tanto masculos, femeninos, mixtos o 
+                    incluso para personas con discapacidad tanto movil como visual.
+                    <br>
+                    <br>
+                    Por esto y mucho mas quisimos crear Liga Manager, por que de esta
+                    manera la opción de crear tu equipo o unirte a uno se podra hacer
+                    de la manera mas rápida y sencilla posible, a través de la aplicación.
+                    <br>
+                    Incluyendo además la opción de control de juego donde uno del equipo
+                    dentra un control de juego interactivo en tiempo real.
+                    <br>
+                    <br>
+                    Asi que sabiendo todo esto y más...
+                    <br>
+                    ¿QUE TE IMPIDE HACER DEPORTE?
+                    <br>
+                    <br>
+                    <img src="../imagenes/motivacion.png" alt="ImagenMotivacion">
+
+                </h3>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="sobreNosotrosDIV">
+        <div class="ladoIZQsn">
+            <div class="card">
+                <img src="../imagenes/sergioFoto.png" alt="sergioFoto">
+                <br>
+                Sergio Cervera
+                <hr>
+                <h4>Developer</h4>
+            </div>
+            <div class="card">
+                <img src="../imagenes/gallegoFoto.png" alt="gallegoFoto">
+                Alejandro Gallego
+                <hr>
+                <h4>Developer</h4>
+            </div>
+
+
+        </div>
+        <div class="ladoDERsn">
+            <img src="../imagenes/sobreNosotros.png">
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="left-container">
+            <p>Ayuda</p>
+            <p>Politica de privacidad</p>
+            <p>Politicas de cookies</p>
+            <p>Condiciones de uso</p>
+        </div>
+        <div class="center-container">
+            <ul class="wrapper">
+                <li class="icon facebook">
+                    <span class="tooltip">Facebook</span>
+                    <img style="width: 40px; height: 40px;" src="../imagenes/icoFacebook.png" alt="Icono Instagram">
+                </li>
+                <li class="icon twitter">
+                    <span class="tooltip">Twitter</span>
+                    <img style="width: 40px; height: 40px;" src="../imagenes/icoTwitter.png" alt="Icono Instagram">
+                </li>
+                <li class="icon instagram">
+                    <span class="tooltip">Instagram</span>
+                    <img style="width: 30px; height: 30px;" src="../imagenes/icoInsta.png" alt="Icono Instagram">
+
+                </li>
+            </ul>
+        </div>
+        <div class="right-container">
+            <p>
+                © Copyright SergioCerveraJimenez
+            </p>
+
+        </div>
+    </footer>
+    <!-- Aqui finaliza el HTML -->
+    <!-- Aqui comienza en JavaScript-->
+    <script src="../javascript/javaScript.js"></script>
+    <!-- Aqui finaliza el JavaScript -->
+</body>
+<!-- Aqui finaliza el body -->
+
+</html>

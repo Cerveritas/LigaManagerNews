@@ -1,0 +1,708 @@
+/* Estilo para el body */
+body {
+    background-color: #595269;
+}
+
+/* Fin de estilo para el body */
+
+/* Estilo para el header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #6d6481;
+    text-align: center;
+}
+
+
+.left-image img,
+.right-image img {
+    width: 100px;
+    /* Ajusta el tamaño según sea necesario */
+    height: auto;
+}
+
+/* Fin de estilo para el header */
+
+/* Estilo para el footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+}
+
+/* Fin de estilo para el footer */
+
+/* Estilos para el hr con clase hrInfo */
+.hrInfo {
+    border-block-color: black;
+}
+
+/* Estilos para el h1 */
+h1 {
+    font-size: 32px;
+    /* Tamaño del texto */
+    font-family: 'Montserrat', sans-serif;
+    /* Tipografia de letra */
+    margin: 0;
+    /* Elimina el margen predeterminado del encabezado */
+    color: #333;
+    /* Color del texto */
+    text-transform: uppercase;
+    /* Convertir texto a mayúsculas */
+    letter-spacing: 2px;
+    /* Espacio entre letras */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    /* Sombra de texto */
+}
+
+/* Estilos para el h2 */
+h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+/* Estilos para el h3 */
+h3 {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Estilos para el h4 */
+h4 {
+    font-size: 12px;
+}
+
+h5 {
+    font-size: 25px;
+    /* Tamaño del texto */
+    font-family: 'Montserrat', sans-serif;
+    /* Tipografia de letra */
+    margin: 0;
+    /* Elimina el margen predeterminado del encabezado */
+    color: #333;
+    /* Color del texto */
+    text-transform: uppercase;
+    /* Convertir texto a mayúsculas */
+    letter-spacing: 2px;
+    /* Espacio entre letras */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    /* Sombra de texto */
+    text-align: center;
+
+}
+
+.news {
+    color: #29B2C2;
+    /* Color azul solo para la palabra "News" */
+}
+
+/* Fin de estilos para el h1 */
+
+
+/* Fin de estilos para el h2 */
+
+/* Estilos para la lista de botones */
+nav {
+    background-color: #4e485c;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #d4d4d4;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Fin de estilos para la lista de botones */
+
+/* Estilos para la ventana emergente */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #7f788f;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #c9c9c9;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Fin de estilos de ventana emergente*/
+
+/* Estilos para video y boton */
+.contenedor-video {
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    position: relative;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+.learn-more {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    position: absolute;
+    /* Posicionamiento absoluto dentro del contenedor */
+    top: 30%;
+    /* Posición vertical: mitad del contenedor */
+    left: 50%;
+    /* Posición horizontal: mitad del contenedor */
+    transform: translate(-50%, -50%);
+    /* Centrar el botón */
+    /* Añade estilos adicionales para el botón (tamaño, color, etc.) */
+   }
+   
+   button.learn-more {
+    width: 12rem;
+    height: auto;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
+   }
+
+
+
+/* Fin de estilos para video y boton */
+
+
+footer {
+    background-color: #6d6481;
+    display: flex;
+}
+
+.left-container,
+.right-container {
+    flex: 0 0 auto;
+    /* Allow left and right containers to shrink */
+    /* Add styling for their content as needed */
+}
+
+.center-container {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    height: 120px;
+    width: 100%;
+    padding-top: 40px;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+}
+
+.wrapper .icon {
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+    background: #1877f2;
+    color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+    background: #1da1f2;
+    color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+    background: #e4405f;
+    color: #fff;
+}
+
+
+/************************************************************************************************************************************/
+/******************************** CSS saberMas ****************************************************************/
+
+.nuestroPropositoDIV {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sobreNosotrosDIV {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.card {
+    width: 210px;
+    height: 274px;
+    background: lightgrey;
+    border: 3px inset white;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5, inset -20px -20px 60px #ffffff;
+    transition: all .5s ease-in-out;
+    border-radius: 1.5rem;
+    padding-top: 10px;
+    display: column;
+    text-align: center;
+    margin: 0 10px;
+    /* Espacio entre las cartas */
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    color: #8a8989;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: all .5s ease-in-out;
+}
+
+
+.cardPro {
+    width: 75%;
+    height: 75%;
+    background: lightgrey;
+    border: 3px inset white;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5, inset -20px -20px 60px #ffffff;
+    transition: all .5s ease-in-out;
+    border-radius: 1.5rem;
+    padding-top: 10px;
+    display: column;
+    text-align: center;
+    margin: 0 10px;
+    /* Espacio entre las cartas */
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    color: #8a8989;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cardPro:hover {
+    transform: translateY(-5px);
+    transition: all .5s ease-in-out;
+}
+
+.ladoIZQsn {
+    display: flex;
+    justify-content: center;
+    /* Centrar horizontalmente el contenido */
+    align-items: center;
+    width: 100%;
+
+
+}
+
+.ladoDERsn {
+    display: flex;
+    align-items: center;
+}
+
+
+.ladoDERnp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/************************************************************************************************************************************/
+/******************************** CSS aplicacion ****************************************************************/
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 375px;
+    height: 666px;
+}
+
+.carousel-slide img {
+    width: 100%;
+    display: none;
+}
+
+.carousel-slide img.active {
+    display: block;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+/* Estilos para las tarjetas */
+
+
+.resumenCardsApps {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.cardAplication {
+    width: 400px;
+    overflow: auto;
+    height: 274px;
+    background: lightgrey;
+    border: 3px inset white;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5, inset -20px -20px 60px #ffffff;
+    transition: all .5s ease-in-out;
+    border-radius: 0.5rem;
+    padding-top: 10px;
+    display: column;
+    text-align: center;
+    margin: 0 60px;
+    /* Espacio entre las cartas */
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    color: #8a8989;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+/************************************************************************************************************************************/
+/******************************** CSS noticias ****************************************************************/
+
+.noticiasDeportes {
+    column-count: 3;
+    column-gap: 20px;
+}
+
+.noticiasDeportes>div {
+    break-inside: avoid;
+    /* Evita que un contenedor se divida entre columnas */
+    margin-bottom: 20px;
+    /* Espacio entre elementos */
+}
+
+.futbolApartadoNoticias {
+    background-color: #887da1;
+}
+
+.baloncestoApartadoNoticias {
+    background-color: #887da1;
+}
+
+.tenisApartadoNoticias {
+    background-color: #887da1;
+}
+
+
+.cardNoticias {
+    width: 450px;
+    height: 300px;
+    background: lightgrey;
+    border: 3px inset white;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5, inset -20px -20px 60px #ffffff;
+    border-radius: 0.5rem;
+    display: column;
+    text-align: center;
+    margin: 0 60px;
+    /* Espacio entre las cartas */
+    justify-content: space-between;
+    margin-bottom: 45px;
+    align-items: center;
+    font-weight: bolder;
+    color: #8a8989;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.resumenCardsNoticias {
+    position: relative;
+    overflow: hidden;
+    display: column;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+
+/************************************************************************************************************************************/
+/******************************** CSS blog ****************************************************************/
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#commentForm, .replyForm {
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+#commentForm input[type="text"],
+#commentForm textarea,
+#commentForm input[type="number"],
+.replyForm input[type="text"],
+.replyForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#commentForm button,
+.replyForm button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#commentForm button:hover,
+.replyForm button:hover {
+    background-color: #45a049;
+}
+
+#comments {
+    width: 500px; /* Ancho fijo */
+    margin-top: 20px;
+    text-align: left;
+}
+
+.comment {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment p {
+    margin: 0;
+}
+
+.comment span {
+    font-weight: bold;
+}
+
+.comment .rating {
+    color: #f39c12;
+}
